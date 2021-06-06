@@ -49,6 +49,10 @@ footer {
   font-size: 0.85rem;
 }
 
+p {
+  line-height: 160%;
+}
+
 .site-logo {
   width: 8rem;
   height: 8rem;
@@ -77,7 +81,5 @@ h2 {
 }
 
 .post-page {
-  p {
-    line-height: 160%;
-  }
+  margin-bottom: 4rem;
 }
