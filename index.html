@@ -3,7 +3,6 @@ layout: default
 title: Cynické hyeny
 ---
 
-<main class="posts">
 {% for post in site.posts %}
   <div class="post">
     <h2>{{ post.title }}</h2>
@@ -13,4 +12,3 @@ title: Cynické hyeny
     <a href="{{ post.url | relative_url }}">Přečíst</a>
   </div>
 {% endfor %}
-</main>

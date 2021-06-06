@@ -12,17 +12,24 @@
   <title>Cynické hyeny</title>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <div class="site-logo"></div>
-      <h1 class="site-title">{{ page.title }}</h1>
-      <nav>
-        <a href={{ "/" | relative_url }}>aktuálně</a>
-        <a href={{ "/archiv" | relative_url }}>archiv</a>
-        <a href={{ "/o-nas" | relative_url }}>o nás</a>
-      </nav>
-    </header>    
+  <header class="container">
+    <div class="site-logo"></div>
+    <h1 class="site-title">{{ page.title }}</h1>
+    <nav>
+      <a href={{ "/" | relative_url }}>aktuálně</a>
+      <a href={{ "/archiv" | relative_url }}>archiv</a>
+      <a href={{ "/o-nas" | relative_url }}>o nás</a>
+    </nav>
+  </header>    
+  
+  <main class="posts container">
     {{ content }}
-  </div>
+  </main>
+  
+  <footer>
+    <div class="container">
+      @ 2021 Cynické hyeny
+    </div>
+  </footer>  
 </body>
 </html>
