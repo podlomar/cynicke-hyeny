@@ -91,8 +91,49 @@ h2 {
 
 .post {
   margin-bottom: 3rem;
+
+  &__title {
+    a {
+      text-decoration: none;
+      color: black;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
 }
 
 .post-page {
   margin-bottom: 4rem;
+}
+
+.bio {
+  display: flex;
+  align-items: flex-start;
+  
+  margin-bottom: 2rem;
+
+  &__photo {
+    flex: 0 0 auto;
+    width: 8rem;
+    height: auto;
+  }
+
+  &__body {
+    margin: 0 2rem;
+  }
+
+  &__name {
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+  
+    .bio__body {
+      text-align: right;
+    }
+  }
 }
