@@ -5,6 +5,10 @@ html {
   font-family: 'Quicksand';
 }
 
+body {
+  background-color: #f6f6f6;
+}
+
 .container {
   max-width: 40rem;
   margin-left: auto;
@@ -13,21 +17,41 @@ html {
 
 header {
   display: flex;
-  padding-top: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  
   flex-direction: column;
   align-items: center;
 }
 
+nav {
+  text-align: center;
+  
+  a {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    text-decoration: none;
+  }
+}
+
 .site-logo {
-  width: 10rem;
-  height: 10rem;
+  width: 8rem;
+  height: 8rem;
   background-image: url(assets/img/hyene.svg);
   background-size: contain;
 }
 
 h1 {
   color: #444;
-  font-size: 3rem;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+
+.site-title {
+  font-size: 2.5rem;
   font-weight: 400;
   letter-spacing: 2px;
 }
