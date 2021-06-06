@@ -13,13 +13,15 @@
 </head>
 <body>
   <header class="container">
-    <div class="site-logo"></div>
+    <div class="navbar">
+      <div class="site-logo"></div>
+      <nav>
+        <a href={{ "/" | relative_url }}>aktuálně</a>
+        <a href={{ "/archiv" | relative_url }}>archiv</a>
+        <a href={{ "/o-nas" | relative_url }}>o nás</a>
+      </nav>
+    </div>
     <h1 class="site-title">{{ page.title }}</h1>
-    <nav>
-      <a href={{ "/" | relative_url }}>aktuálně</a>
-      <a href={{ "/archiv" | relative_url }}>archiv</a>
-      <a href={{ "/o-nas" | relative_url }}>o nás</a>
-    </nav>
   </header>    
   
   <main class="posts container">
