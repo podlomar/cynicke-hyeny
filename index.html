@@ -3,14 +3,4 @@ layout: default
 title: Cynické hyeny
 ---
 
-{% for post in site.posts %}
-  <div class="post">
-    <h2 class="post__title">
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-    </h2>
-    <p>
-      {{ post.excerpt }}
-    </p>
-    <a href="{{ post.url | relative_url }}">Přečíst</a>
-  </div>
-{% endfor %}
+{{ site.posts.first.content }}

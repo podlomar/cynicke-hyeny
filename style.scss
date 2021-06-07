@@ -1,6 +1,8 @@
 ---
 ---
 
+$color-straw: #EBE6AD;
+
 html {
   font-family: 'Quicksand';
 }
@@ -78,7 +80,7 @@ h2 {
   font-weight: 400;
   letter-spacing: 2px;
   text-align: center;
-  background-color: #eee;
+  background-color: $color-straw;
   padding-top: 3rem;
   padding-bottom: 3rem;
   margin-top: -3rem;
